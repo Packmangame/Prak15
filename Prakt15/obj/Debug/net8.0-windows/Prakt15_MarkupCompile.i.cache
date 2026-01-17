@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\artur\Desktop\Новая папка (2)\Prakt15\Prakt15\obj\Debug\net8.0-windows\
+C:\Users\st310-05\Desktop\Новая папка (2)\Prakt15\obj\Debug\net8.0-windows\
 Prakt15
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\artur\Desktop\Новая папка (2)\Prakt15\Prakt15\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\st310-05\Desktop\Новая папка (2)\Prakt15\App.xaml
 9844923966
 
 22-1834777202
-2281760328885
+2281694515464
 MainWindow.xaml;Pages\EditBrandWindow.xaml;Pages\EditProductWindow.xaml;Pages\EditTagWindow.xaml;Pages\ManageBrandsWindow.xaml;Pages\ManageCategoriesWindow.xaml;Pages\ManagerPage.xaml;Pages\ManageTagsWindow.xaml;Pages\VisitorPage.xaml;
 
 False

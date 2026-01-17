@@ -6,8 +6,8 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
         <Border Grid.Column="0" 
@@ -67,8 +67,9 @@
                                  BorderThickness="1"
                                  Margin="0,0,5,0"
                                   PreviewTextInput="TxtPrice_PreviewTextInput"
- KeyDown="TxtPrice_KeyDown"/>
-                                 <!--TextChanged="TxtPrice_TextChanged"-->
+                                 KeyDown="TxtPrice_KeyDown"
+                                 TextChanged="TxtPriceFrom_TextChanged"/>
+                                 
                                 
                         <Label Foreground="#333333" VerticalAlignment="Center">до</Label>
                         <TextBox x:Name="txtPriceTo" 
@@ -80,10 +81,10 @@
                                  BorderBrush="#00C4B4"
                                  BorderThickness="1"
                                  Margin="5,0,0,0"
-                                 
+                                 TextChanged="TxtPriceTo_TextChanged"
                                  PreviewTextInput="TxtPrice_PreviewTextInput"
                                  KeyDown="TxtPrice_KeyDown"/>
-                        <!--TextChanged="TxtPrice_TextChanged"-->
+                        
                     </StackPanel>
 
                     <Label Foreground="#333333" FontWeight="Bold" FontSize="16" Margin="0,10,0,0">Сортировка</Label>
@@ -197,7 +198,7 @@
                         <DataTemplate>
                             <Border BorderThickness="2" 
                                     CornerRadius="5"
-                                    Margin="0,0,0,10" 
+                                     
                                     Padding="15"
                                     Background="White">
 
@@ -232,7 +233,7 @@
 
                                         <TextBlock Grid.Column="0"
                                                    Text="{Binding Name}" 
-                                                   FontSize="18" 
+                                                   FontSize="20" 
                                                    FontWeight="Bold"
                                                    Foreground="#00C4B4"
                                                    VerticalAlignment="Center"/>
@@ -246,7 +247,7 @@
 
                                     <StackPanel Grid.Row="1" 
                                                 Orientation="Horizontal"
-                                                Margin="0,0,0,4">
+                                                >
                                         <TextBlock Text="★"
                                                    FontSize="14"
                                                    Foreground="#FFD700"
@@ -263,14 +264,14 @@
                                                Text="{Binding CategoryName}" 
                                                FontSize="14"
                                                Foreground="#333333"
-                                               Margin="0,0,0,4"/>
+                                               Margin="0,15,0,15"/>
 
                                     <TextBlock Grid.Row="3" 
                                                Text="{Binding Description}" 
                                                TextWrapping="Wrap"
                                                FontSize="14"
                                                Foreground="#333333"
-                                               Margin="0,0,0,6"/>
+                                               Margin="0,0,0,15"/>
 
                                     <Grid Grid.Row="4">
                                         <Grid.ColumnDefinitions>
@@ -283,7 +284,9 @@
                                                    FontSize="13"
                                                    Foreground="#00C4B4"
                                                    FontWeight="Medium"
+                                                   
                                                    VerticalAlignment="Center"/>
+                                        
 
                                         <StackPanel Grid.Column="1"
                                                     Orientation="Horizontal"
@@ -334,7 +337,7 @@
                                        FontSize="14"
                                        Foreground="White"
                                        FontWeight="Bold"
-                                       Text="Всего товаров: 150"/>
+                                       />
                             <TextBlock Text=" | " 
                                        FontSize="14"
                                        Foreground="White"
@@ -343,20 +346,10 @@
                                        FontSize="14"
                                        Foreground="White"
                                        FontWeight="Bold"
-                                       Text="Показано: 152"/>
+                                       />
                         </StackPanel>
 
-                        <StackPanel Grid.Column="1"
-                                    Orientation="Horizontal"
-                                    HorizontalAlignment="Right">
-                            <TextBlock Text="Остаток: " 
-                                                       FontSize="14"
-                                                       Foreground="#ffffff"/>
-                            <TextBlock Text="999" 
-                                                       FontSize="14"
-                                                       FontWeight="Bold"
-                                                       Foreground="#ffffff"/>
-                        </StackPanel>
+                        
                     </Grid>
                 </Border>
             </Grid>

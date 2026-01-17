@@ -4722,23 +4722,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\artur\\.nuget\\packages\\": {},
-    "D:\\WinPrograms\\VS\\SDK\\NuGetPackages": {}
+    "C:\\Users\\st310-05\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artur\\Desktop\\Новая папка (2)\\Prakt15\\Prakt15\\Prakt15.csproj",
+      "projectUniqueName": "C:\\Users\\st310-05\\Desktop\\Новая папка (2)\\Prakt15\\Prakt15.csproj",
       "projectName": "Prakt15",
-      "projectPath": "C:\\Users\\artur\\Desktop\\Новая папка (2)\\Prakt15\\Prakt15\\Prakt15.csproj",
-      "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artur\\Desktop\\Новая папка (2)\\Prakt15\\Prakt15\\obj\\",
+      "projectPath": "C:\\Users\\st310-05\\Desktop\\Новая папка (2)\\Prakt15\\Prakt15.csproj",
+      "packagesPath": "C:\\Users\\st310-05\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\st310-05\\Desktop\\Новая папка (2)\\Prakt15\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\WinPrograms\\VS\\SDK\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\st310-05\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4765,8 +4765,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -4798,24 +4797,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.23, 8.0.23]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.23, 8.0.23]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.23, 8.0.23]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.23, 8.0.23]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -4824,7 +4805,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

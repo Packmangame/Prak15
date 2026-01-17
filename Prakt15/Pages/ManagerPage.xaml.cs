@@ -2,9 +2,6 @@
 using Prakt15.Models;
 using Prakt15.Services;
 
-
-//using Prakt15.Models;
-//using Prakt15.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -45,6 +42,7 @@ namespace Prakt15
         private void ManagerPage_Loaded(object sender, RoutedEventArgs e)
         {
             LoadData();
+            
         }
 
         private void LoadData()
