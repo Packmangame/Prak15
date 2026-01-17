@@ -29,7 +29,7 @@ namespace Prakt15
 
         private void BtnManager_Click(object sender, RoutedEventArgs e)
         {
-            if (txtPinCode.Text == "1234")
+            if (txtPinCode.Password == "1234")
             {
                 var managerPage = new ManagerPage();
                 mainFrame.Navigate(managerPage);
