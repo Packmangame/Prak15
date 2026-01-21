@@ -248,7 +248,10 @@
                                             <ColumnDefinition Width="*"/>
                                             <ColumnDefinition Width="Auto"/>
                                         </Grid.ColumnDefinitions>
+                                        
+                                        
 
+                                        
                                         <TextBlock Grid.Column="0"
                                                    Text="{Binding TagsString}" 
                                                    FontSize="13"

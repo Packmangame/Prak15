@@ -30,7 +30,7 @@ public partial class Product
     public virtual ICollection<Tag> Tags { get; set; } = new List<Tag>();
 
     public string CategoryName => Category?.Name ?? string.Empty;
-    public string TagsString => Tags != null ? string.Join(", ", Tags.Select(t => t.Name)) : string.Empty;
+    public string TagsString => Tags != null ? string.Join(", ", Tags.Select(t => $"#{t.Name}")) : string.Empty;
     public bool IsLowStock => Stock < 10;
 
 }
