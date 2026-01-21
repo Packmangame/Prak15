@@ -96,8 +96,8 @@
                     <ComboBoxItem Tag="Name">По названию</ComboBoxItem>
                     <ComboBoxItem Tag="PriceAsc">По цене (возрастание)</ComboBoxItem>
                     <ComboBoxItem Tag="PriceDesc">По цене (убывание)</ComboBoxItem>
-                    <ComboBoxItem Tag="QuantityAsc">По количеству (возрастание)</ComboBoxItem>
-                    <ComboBoxItem Tag="QuantityDesc">По количеству (убывание)</ComboBoxItem>
+                    <ComboBoxItem Tag="StockAsc">По количеству (возрастание)</ComboBoxItem>
+                    <ComboBoxItem Tag="StockDesc">По количеству (убывание)</ComboBoxItem>
                 </ComboBox>
                 <Button x:Name="btnReset" 
                         Content="Сбросить фильтры" 
@@ -215,6 +215,33 @@
                                                FontSize="14"
                                                Foreground="#333333"
                                                Margin="0,15,0,15"/>
+                                    
+                                    <StackPanel Grid.Row="3" Margin="0 15 0 0"
+                                                Orientation="Horizontal"
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Center">
+                                        <TextBlock Text="Остаток: " 
+                                                    FontSize="14"
+                                                   VerticalAlignment="Center"
+                                                    Foreground="#333333"/>
+                                        <TextBlock Text="{Binding Stock}" 
+                                                   FontSize="14"
+                                                   VerticalAlignment="Center"
+                                                   FontWeight="Bold">                   
+                                            <TextBlock.Style>
+                                                <Style TargetType="TextBlock">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding IsLowStock}" Value="True">
+                                                            <Setter Property="Foreground" Value="#ffd129"/>
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding IsLowStock}" Value="False">
+                                                            <Setter Property="Foreground" Value="#333333"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBlock.Style>
+                                        </TextBlock>
+                                    </StackPanel>
 
                                     <Grid Grid.Row="4">
                                         <Grid.ColumnDefinitions>
@@ -229,29 +256,7 @@
                                                    FontWeight="Medium"
                                                    VerticalAlignment="Center"/>
 
-                                        <StackPanel Grid.Column="1"
-                                                    Orientation="Horizontal"
-                                                    VerticalAlignment="Center">
-                                            <TextBlock Text="Остаток: " 
-                                                       FontSize="14"
-                                                       Foreground="#333333"/>
-                                            <TextBlock Text="{Binding Stock}" 
-                                                       FontSize="14"
-                                                       FontWeight="Bold">
-                                                <TextBlock.Style>
-                                                    <Style TargetType="TextBlock">
-                                                        <Style.Triggers>
-                                                            <DataTrigger Binding="{Binding IsLowStock}" Value="True">
-                                                                <Setter Property="Foreground" Value="#ffd129"/>
-                                                            </DataTrigger>
-                                                            <DataTrigger Binding="{Binding IsLowStock}" Value="False">
-                                                                <Setter Property="Foreground" Value="#333333"/>
-                                                            </DataTrigger>
-                                                        </Style.Triggers>
-                                                    </Style>
-                                                </TextBlock.Style>
-                                            </TextBlock>
-                                        </StackPanel>
+                                        
                                     </Grid>
                                 </Grid>
                             </Border>
